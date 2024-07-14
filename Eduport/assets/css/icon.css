@@ -1,0 +1,151 @@
+/* Mail icon */
+
+.mbox {
+    background-color: white;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    border: 3px solid #f7c32e;
+}
+
+.mbox::after,
+.mbox::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 20%;
+    left: -20%;
+    background-color: #f7c32e;
+    transform: rotate(45deg);
+}
+
+.mbox::before {
+    transform: rotate(-45deg);
+    left: 35%;
+}
+
+.outline {
+    outline: 15px solid #f7c32e;
+    border-radius: 100%;
+    background-color: #f7c32e;
+}
+
+.mailtext img {
+    filter: invert(29%) sepia(86%) saturate(449%) hue-rotate(100deg) brightness(91%) contrast(86%);
+}
+
+/* Clock İcon*/
+
+.clock {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid red;
+}
+
+.clock::after,
+.clock::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 1px;
+    top: 60%;
+    left: 40%;
+    background-color: red;
+    transform: rotate(40deg);
+}
+
+.clock::before {
+    top: 35%;
+    left: 25%;
+    transform: rotate(90deg);
+}
+
+
+/* Tırnak */
+
+
+.tirnak {
+    display: block;
+    margin-top: 11px;
+    margin-right: -5px;
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+
+}
+
+.tirnak::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 11px;
+    border-radius: 50%;
+    border-top: 2.5px solid gray;
+    top: -90%;
+    left: 00%;
+    border-left: 5px solid gray;
+
+}
+
+.tirnakend {
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-left: -35px;
+    transform: rotate(180deg);
+}
+.dennis .tırnak{
+    margin: 10px;
+}
+
+/* Arrow icon */
+
+.arrowbox{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 5%;
+    right: 3%;
+    border-radius: 5px;
+    background-color: #0c64e948;
+    padding: 15px 22px;
+    transition:.2s ease-in-out all;
+    animation: up .4s ease-in-out;
+}
+.arrow{
+    position: relative;
+    width:2px ;
+    height: 13px;
+    background-color: #297eff;
+}
+
+.arrow::after,
+.arrow::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px ;
+    height: 9px;
+    background-color: #297eff;
+    right: 140%;
+    bottom: 50%;
+    transform: rotate(40deg);
+}
+.arrow::before{
+    right: -110%;
+    transform: rotate(-40deg);
+}
+
+.arrowbox:hover{
+    background-color: #0c64e9;
+    cursor: pointer;
+}
+.arrowbox:hover .arrow::after,
+.arrowbox:hover .arrow::before,
+.arrowbox:hover .arrow{
+    background-color: white;
+}
